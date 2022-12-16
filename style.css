@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body{
+    background: #f60243;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: white;
+
+    max-width: 450px;
+    min-width: 250px;
+    padding: 30px;
+
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px 4px rgb(62, 1, 8);
+}
+.container .inputs{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.container .inputs input{
+    width: 100%;
+    height: 30px;
+
+    font-size: 16px;
+    border: none;
+    border-bottom: 3px solid grey;
+    outline: none;
+    color: #310659;
+    transition: 0.3s;
+
+
+}
+.container .inputs label{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-weight: bold;
+    color: #310659;
+    font-size: 16px;
+}
+.submit{
+    width: 100%;
+    text-align: center;
+}
+.submit input{
+    background: linear-gradient( #8b65ac, #1d0434);
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.container .inputs input:focus ~ label{
+    transform: translateY(-25px);
+    color: black;
+}
+.container .inputs input:valid ~ label{
+    transform: translateY(-25px);
+    color: black;
+}
